@@ -9,7 +9,7 @@ function App() {
       // Par exemple, tu peux utiliser fetch() pour faire une requête HTTP vers l'API météo
       let lat = 12;
       let lng = 77;
-      const apiUrl = `https://api.ambeedata.com/weather/latest/by-lat-lng?lat=${lat}&lng=${lng}&api_key=${API_KEY}`;
+      const apiUrl = `http://api.openweathermap.org/data/2.5/weather?q={input},uk&APPID={API_KEY},`;
       
       fetch(apiUrl)
         .then(response => response.json())

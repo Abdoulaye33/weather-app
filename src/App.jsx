@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <ChartComponent />
+      {/* <ChartComponent /> */}
       <h1>Bonjourno</h1>
 
       
