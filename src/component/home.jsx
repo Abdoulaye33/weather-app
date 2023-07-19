@@ -9,8 +9,9 @@ const Home = () => {
       try {
         const data = await fetch(API_KEY);
         const json = await data.json();
-        setJsonData(json);
-        console.log(json);
+        const citiesArray = json.list; 
+        setJsonData(citiesArray);
+        console.log(citiesArray);
       } catch (error) {
         console.error("Une erreur s'est produite lors de la récupération des données", error);
       }
